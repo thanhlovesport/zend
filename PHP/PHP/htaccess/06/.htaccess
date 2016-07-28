@@ -1,0 +1,7 @@
+# Mật khẩu cho thư mục
+
+AuthName "06"
+AuthType Basic
+AuthUserFile F:\xampp\htdocs\htaccess\06\.htpasswd
+
+require valid-user

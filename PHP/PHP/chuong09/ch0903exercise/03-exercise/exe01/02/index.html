@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Case 01</title>
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+
+	$(document).ready(function(){
+		$('.tab-box').load('php.html'); // load vào thẻ div có class tab-box url là page(lấy nội dung từ trang php.html đưa vào class đó ehe)
+		$('.tabs a').click(function(){ // su kien click o cac tab
+			var className 	= $(this).attr('class'); // attr là attribute o day la php, asp, jsp
+			//console.log(className);
+			var page 		= className + '.html';
+			$('.tab-box').load(page);
+			$('.tabs *').removeClass('current'); // class tab truy cập các phần tử bên trong remove class có tên current trước khi gán nó vô cho class kia
+			$(this).addClass('current'); 
+		});
+	});
+</script>
+
+</head>
+
+<body>
+	<div id="tab-B">
+    	<ul class="tabs">		<!-- href="javascript:loadPage('php.html')" phải có hàm load page ở trên  -->
+        	<li><a class="php current" href="#">PHP Script</a></li>
+            <li><a class="asp" href="#">ASP Script</a></li>
+            <li><a class="jsp" href="#">JSP Script</a></li>
+        </ul>
+        <div class="box-wrapper">
+        	<div class="tab-box current">
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

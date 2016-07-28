@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type ="text/xsl" href ="04.xsl" ?>
+	<book>
+	<title>Lập Trình PHP </title>
+	<author>ZendVN</author>
+	<page>350</page>
+	<weight units = "kilogram">500</weight>
+	</book>
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Tạo một nút gốc  -->
+<bookshop>
+		<book>
+		<title>Lập Trình PHP </title>
+		<author>ZendVN</author>
+		<page>350</page>
+		<weight unit = "gram">400</weight>
+		</book>
+	
+		<book>
+			<title>Cánh buồm đỏ thấm </title>
+			<author>Văn học pháp</author>
+			<page>250</page>
+			<weight unit = "kg">1</weight>
+		</book>
+	
+		<book>
+			<title>Đắc Nhân Tâm </title>
+			<author>DaleCarnege</author>
+			<page>380</page>
+			<weight unit = "kig">1</weight>
+		</book>
+</bookshop>

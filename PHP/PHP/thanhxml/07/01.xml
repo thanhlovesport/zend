@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Nhúng tập tin xsl vào tập tin xml -->
+<?xml-stylesheet type ="text/xsl" href ="01.xsl" ?>
+	<book>
+	<title>Lập Trình PHP </title>
+	<author>ZendVN</author>
+	<page>350</page>
+	<weight unit = "gram">400</weight>
+	</book>
+

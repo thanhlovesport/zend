@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type ="text/xsl" href ="05.xsl" ?>
+<bookshop>
+	<book>
+	<title>Lập Trình PHP </title>
+	<author>ZendVN</author>
+	<page>350</page>
+	<weight units = "gram">500</weight>
+	</book>
+	
+	<book>
+	<title>Lập Trình Zend </title>
+	<author>ZendVN</author>
+	<page>550</page>
+	<weight units = "gram">600</weight>
+	</book>
+	
+	
+	<book>
+	<title>Lập Trình Joomla </title>
+	<author>ZendVN</author>
+	<page>660</page>
+	<weight units = "kilogram">1.5</weight>
+	</book>
+	
+</bookshop>
+	

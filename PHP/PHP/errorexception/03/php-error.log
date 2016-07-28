@@ -1,0 +1,2 @@
+[15-Sep-2015 08:24:59 Europe/Berlin] PHP Notice:  Undefined variable: array in F:\xamp\htdocs\PHP\errorexception\03\02.php on line 5
+[15-Sep-2015 08:24:59 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in F:\xamp\htdocs\PHP\errorexception\03\02.php on line 5

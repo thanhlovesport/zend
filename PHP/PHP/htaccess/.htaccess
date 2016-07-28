@@ -1,0 +1,58 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+# 01 Rewrite PATTERN DESTINATION 
+# http://localhost/htaccess/08/abc.html
+# http://localhost/htaccess/08/def.html
+RewriteRule def.html 08/abc.html
+#RewriteRule (.*)\.html 08/abc.html bất kì một tập tin nào có phần mở rộng là html
+
+# Chuyển tất cả các yêu cầu html về trang lukatoni.php
+# RewriteRule (.*)\.html 08/lukatoni.php
+
+# Chuyển tất cả các yêu cầu html của folder 08 về trang lukatoni.php
+#RewriteRule 08/(.*)\.html 08/lukatoni.php
+ 
+# Chuyển tất cả các yêu cầu html về trang php tương ứng
+# 08/messi.html => 08/messi.php   Trang messi.html là trang giả của trang messi.php theo hình thức trên trình duyệt
+# 08/travel.html => 08/travel.php
+
+#RewriteRule ^08/(.*)\.html$  08/$1\.php	
+#ErrorDocument 404 /htaccess/error/error.html
+
+# Chuyển đổi tất cả các request về file index.php
+# ^$ kí tự bắt đầu và kết thúc
+# RewriteRule ^(.*)$ index.php
+
+# URL Friendly
+# http://localhost/htaccess/09/login.php
+# RewriteRule 09/dangnhap.html	09/login.php
+
+# URL Friendly
+# http://localhost/htaccess/09/info.php?id=2name=lap-trinh-zend-frame-work
+# http://localhost/htaccess/09/info.php?lap-trinh-zend-frame-work-2.html
+# $1 là biểu thức 1 $2 là biểu thức 2
+# RewriteRule 09/([A-Za-z_-]+)-([0-9]+)\.html	09/info.php?id=$2name=$1
+
+# Rewrite STRING CONDITION
+
+RewriteCond	%{SERVER_PORT} 445 OR
+RewriteCond	%{SERVER_PORT} 86 
+RewriteRule	^(.*)$ index.php
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
